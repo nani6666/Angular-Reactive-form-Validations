@@ -1,0 +1,10 @@
+<form [formGroup]="passwordForm">
+  <div>
+    <input class="" formControlName="password">
+  </div>
+  <div>
+    <input class="" formControlName="confirmpassword">
+  </div>
+  <p>Form value: {{ passwordForm.value | json }}</p>
+  <button [disabled]="!passwordForm.valid">Submit</button>
+</form>
